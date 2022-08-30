@@ -1,0 +1,885 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="WinTitleMain">道骊CBS</sys:String>
+    <sys:String x:Key="WinMenuMainFile">文件</sys:String>
+    <sys:String x:Key="WinMenuMainSettings">设置</sys:String>
+    <sys:String x:Key="WinMenuMainSettingsDevice">设备管理</sys:String>
+    <sys:String x:Key="WinMenuMainSettingsLanguage">语言</sys:String>
+    <sys:String x:Key="WinTxtMainWelcome">欢迎您：</sys:String>
+    <sys:String x:Key="WinTxtTotalSummary">总数</sys:String>
+    <sys:String x:Key="WinTxtPleaseChoose">请选择</sys:String>
+    <sys:String x:Key="WinTxtCancel">取消</sys:String>
+
+    <sys:String x:Key="WinTxtPodAnticipateAnticipateTruck">预约提柜</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateImportStatus">状态导入</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateSearch">查询</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateReset">重置</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateExport">导出</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateCopyConfirm">复制确认信息</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateEdit">编辑</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateExportClearance">导出拆箱清单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateExportDO">导出卡车预约BO-PDF</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateExportDOExcel">导出卡车预约BO-EXCEL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateExportOrderDetail">导出订单明细</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDownloadMBL">下载MBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDownloadHBL">下载HBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDocument">单证管理</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFee">费用录入</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoContainer">箱单明细</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrder">签收单上传</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoExportContainer">导出舱单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoExportAMS">导出AMS</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoExportMBL">导出MBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPrintHBL">打印HBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPreviewMBL">预览电放MBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPreviewHBL">预览电放HBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoReset">还原</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSave">保存</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCancel">取消</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoRefreshFee">刷新</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSaveFee">费用保存</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUpload">上传</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPreviewFilee">预览</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDeleteFile">删除</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgAppointment">预约</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoHandOver">交派</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSignFor">签收</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUploadImg">上传图片</sys:String>
+
+    <sys:String x:Key="WinTxtPodAnticipateArriveDay">预计靠港日(Day)</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateLatestEventType">操作状态</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateEta">ETA时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateAta">ATA时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateClearanceReleaseDate">清关放行时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDockReleaseDate">码头放行时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbNo">主单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateContainerNo">柜号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateBatchNo">箱批次号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateTransferMethod">转运方式</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateRemark">主单备注</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipatePodCode">目的港</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDischargePort">卸货港</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDestinationPort">目的港码头</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateClearanceStartDate">清关开始时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipatePickupConScheduleDate">预约提柜时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateIsAppointment">是否预约成功</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipatePickupConActualDate">实际提柜日期</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateReturnDate">还柜时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateTruckingAgent">操作公司</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateWholeCabinetDate">整柜到仓时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateCabinetRemovalDate">拆柜时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateVesselName">船名/航司</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateVoyageNum">航次/航班号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateRoute">航线</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDestinationFee">目的港费用</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateOrderType">业务类型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateTransport">运输方式</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbPieces">主单件数</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbVolume">主单体积</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbGrossWeight">主单毛重</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipatePolCode">起运港</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbShipperName">主单发货人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbShipperAddress">主单发货人地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbConsigneeName">主单收货人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbConsigneeAddress">主单收货人地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbNotifyName">主单通知人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMawbNotifyAddress">主单通知人地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateForwardingName">海外代理</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateForwardingAddress">海外代理地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateConsigneeName">收件人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDestStationName">收件仓库</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateConsigneeAddress">私人收件仓库</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateConsigneeTel">收货人联系方式</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateGoodsEname">商品品名</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateCreateTime">创建时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateCreateUserName">创建人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateUpdateTime">编辑时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateUpdateUserName">编辑人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoVesselNameVoyageNum">船名/航次</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCustomsAgent">清关代理</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSponserName">委托单位</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDestStation">目的地</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoLadingType">提单类型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPayType">付款类型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoLading">提单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoMasterBill">提单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSealNo">封号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoContainerCode">箱型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoIsRelease">是否放行</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoClearCustom">清关单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCustomsOrderNo">报关订单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCustomsNo">报关单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoReportingUnit">申报单位</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCurrency">币种</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoGoodsAmount">货值总价</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoTaxAmount">税额总价</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPaymentMethod">缴税方式</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoLadingGood">提货单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoMawbNo">提货主单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoExecutor">卡车公司</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPolCode">取件地</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoShipperAddress">取件详细地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoShipperName">取件联系人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoConsigneeName">收货联系人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCreateUserName">预约人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUploadFile">上传资料</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDownloadFile">下载</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFileName">文件名</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFileType">文件类型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUploadUserName">上传人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUploadTime">上传时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDepartureFile">始发站单证</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDocumentType">单证类型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeIn">应收</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeOut">应付</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeInReset">还原</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOpenMawbFee">主单费用</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoTableType">单号类型</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderNo">订单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeType">费用项</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPayer">结算单位</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoRate">汇率</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUnitName">计费单位</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUnitCount">数量</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUnitPrice">单价</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoAmounte">总金额</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoBaseAmount">本位币金额</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeRemark">费用备注</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeStatus">费用状态</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoBillNo">账单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoInvoiceNo">发票号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoInvStatus">核销状态</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoWrittenOffDate">核销时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeCreateBy">录入人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFeeCreateDate">录入时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoRowType">数据行</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSaleCompany">委托公司</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderNum">单数</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPkgsNum">总件数</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoGrossWeight">总重量</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoVolume">总体积</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSaleCode">销售公司</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoIsCustom">是否报关</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCustomsGroupNo">合并报关组</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCustomsCombinText">合并报关</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoRealCustomsNo">关单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoShipperChannel">产品</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoCustomerRefNo">客户参考号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoFbaNo">FBA号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoIsUpload">是否上传</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDispatch">交派时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPod">签收时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoAcPkgsNum">件数</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoAcGrossWeight">总重量</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoAcVolume">方数</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoGoodsCnamey">中文品名</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoHsCodeCn">中国HSCODE</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoHsCode">目的国HSCODE</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoBrand">品牌</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoModel">型号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoMaterialEname">材质</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPurposeEname">用途</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSpecialGoodsProperties">特殊属性</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPieces">数量</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOriginalPrice">单价</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOriginalTotalAmount">总价</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoConsigneeWarehouse">仓库代码</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoSkuFile">图片</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoUps">UPS单号</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoConsigneeAddress">卡派地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderGrossWeight">毛重</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderVolume">体积</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderWarehouseCode">收件人</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderAddress">收件地址</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoPostCode">邮编</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoOrderTel">联系电话</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateInfoDeliveryMode">派送方式</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgEmailRecipient">收件人</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgEmailCc">抄送人</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgEmailTitle">邮件标题</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgComma">多个收件人请用'，'逗号隔开</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgContent">邮件内容</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgAttachment">邮件附件</sys:String>
+    <sys:String x:Key="WinTxtPodBookTruckDlgTitleNullText">请输入邮件标题</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateMBLUpload">上传MBL</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateHBLUpload">上传HBL</sys:String>
+
+    <sys:String x:Key="WinTxtPodAnticipateDEPARTURE">已起航</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateARRIVAL">已到港</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateCLEARANCESTART">清关中</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateCLEARANCERELEASE">清关放行</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateDOCKRELEASE">码头放行</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipatePICKUPCONSCHEDULE">预约提货</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipatePICKUPCONACTUAL">实际提货</sys:String>
+
+
+    <sys:String x:Key="WinTxtPodAnticipateShowToastExport">导出完成</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastOnlyAddress">收件仓库和私人收件仓库只可选一个</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastSelectLading">请选中提货单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastMissLading">缺少提单数据</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastShipPrint">仅运力公司可以打印</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastMissMaster">缺少主单数据</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastCustomsExist">清关单已存在</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastLadingExist">提货单已存在</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFileRest">文件不支持还原</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFileSuccess">文件上传成功</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFileFail">文件上传失败</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFileDeleteSuccess">文件删除成功</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFileDeleteFail">文件删除失败</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastCannotEdit">费用已挂账单，不能编辑</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastCostCannotEdit">分摊费用不能直接编辑</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFeeCannotEdit">费用已审核，不能编辑</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastFeeUpdateSuccess">费用更新成功</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastOrderSelecte">未选中订单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastUpdateComplete">更新成功</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastSentSuccess">发送成功</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastDocumentFile">请先上传签收单</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastIsHandOver">该订单已交派</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastIsSignFor">该订单已签收</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastNoHandOver">请先输入交派时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastNoSignFor">请先输入签收时间</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastLimitFive">上传图片不能超过5个</sys:String>
+    <sys:String x:Key="WinTxtPodAnticipateShowToastNoFile">没有文件可预览</sys:String>
+
+    <sys:String x:Key="WinTxtPodDeverysysMawbNo">系统出库单号</sys:String>
+    <sys:String x:Key="WinTxtPodDeverymawbNo">出库单号</sys:String>
+    <sys:String x:Key="WinTxtPodDeverylatestEventTypeName">主单状态</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryetd">预计发运时间</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryeta">预计到达时间</sys:String>
+    <sys:String x:Key="WinTxtPodDeverysysmawbTypeName">主单类型</sys:String>
+    <sys:String x:Key="WinTxtPodDeverysponserName">发货方</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryorderType">订单类型</sys:String>
+    <sys:String x:Key="WinTxtPodDeverybookingOrderQty">预配票数</sys:String>
+    <sys:String x:Key="WinTxtPodDeverybookingBoxQty">预配件数</sys:String>
+    <sys:String x:Key="WinTxtPodDeverybookingVolume">预配体积</sys:String>
+    <sys:String x:Key="WinTxtPodDeverybookingWeight">预配毛重</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryexpectPalletNums">预配托数</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryorderNums">实装票数</sys:String>
+    <sys:String x:Key="WinTxtPodDeverymawbPieces">实装件数</sys:String>
+    <sys:String x:Key="WinTxtPodDeverymawbVolume">实装体积</sys:String>
+    <sys:String x:Key="WinTxtPodDeverymawbGrossWeight">实装毛重</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryactualPalletNums">实际托数</sys:String>
+    <sys:String x:Key="WinTxtPodDeverypodPalletNum">交接托数</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryflightNo">车牌号</sys:String>
+    <sys:String x:Key="WinTxtPodDeverydriverName">司机姓名</sys:String>
+    <sys:String x:Key="WinTxtPodDeverydriverPhone">手机号</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryshipPositionName">开舱信息</sys:String>
+    <sys:String x:Key="WinTxtPodDeverycontainerNo">集装箱号</sys:String>
+    <sys:String x:Key="WinTxtPodDeverycontainerCode">集装箱类型</sys:String>
+    <sys:String x:Key="WinTxtPodDeverymasterBill">提单号</sys:String>
+    <sys:String x:Key="WinTxtPodDeverysealNo">封号</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryshipCompanyName">船公司</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryvesselVoyageName">船名/航次</sys:String>
+    <sys:String x:Key="WinTxtPodDeverypodCode">目的港</sys:String>
+    <sys:String x:Key="WinTxtPodDeverydestStationName">目的仓</sys:String>
+    <sys:String x:Key="WinTxtPodDeverycreateTime">创建时间</sys:String>
+    <sys:String x:Key="WinTxtPodDeverycreateUserName">创建人</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryremark">主单备注</sys:String>
+    <sys:String x:Key="WinTxtPodDeverypodDate">POD时间</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryconsigneeName">收件人</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryconsigneePostcode">收件人邮编</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryconsigneeTel">收件人电话</sys:String>
+    <sys:String x:Key="WinTxtPodDeverytailInboundActualDate">实际到仓时间</sys:String>
+    <sys:String x:Key="WinTxtPodDeverydispatchDate">交派时间</sys:String>
+
+    <sys:String x:Key="WinTxtPodDeveryOperationStatus">操作状态</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryDestStation">仓库选择</sys:String>
+    <sys:String x:Key="WinTxtPodDeverymawbType">主单类型</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryedt">预计出发时间</sys:String>
+    <sys:String x:Key="WinTxtPodDeveryto">至</sys:String>
+    <sys:String x:Key="WinTxtPodDeverypagesize">数量</sys:String>
+    <sys:String x:Key="WinTxtPodOrderNo">订单号</sys:String>
+    <sys:String x:Key="WinTxtPodUnbookedStore">未预约库存</sys:String>
+    <sys:String x:Key="WinTxtPodbookedStore">已预约库存</sys:String>
+    <sys:String x:Key="WinTxtPodbookedStoreADD">添加>></sys:String>
+    <sys:String x:Key="WinTxtPodbookedStoreRemove">&lt;&lt;移除</sys:String>
+    <sys:String x:Key="WinTxtPodbookedStoreSave">保存分配</sys:String>
+    <sys:String x:Key="WinTxtPodbookedLoadedIntoContainer">装箱已完毕</sys:String>
+    <sys:String x:Key="WinTxtPodbookedUpdatingSuccess">更新成功</sys:String>
+    <sys:String x:Key="WinTxtPodbookedNotContainer">非集装箱</sys:String>
+    <sys:String x:Key="WinTxtPodbookedConfirm">确认</sys:String>
+    <sys:String x:Key="WinTxtPodbookedCancel">取消</sys:String>
+    <sys:String x:Key="WinTxtPodbookedConsigneeTel">收件电话</sys:String>
+    <sys:String x:Key="WinTxtPodbookedPalletNum">托数</sys:String>
+
+
+    <sys:String x:Key="WinTxtPodPodstatusName">订单状态</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailMawbNo">尾程主单号</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailorderNo">订单号/箱号</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailcustomerRefNo">客户参考号</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailcustomerShortName">客户简称</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailsaleCompany">委托方</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailshipperChannelName">发货渠道</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailtransportModeName">运输方式</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailshippertailDeliveryMode">尾程代理</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailDestorderremark">目的港订单备注</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailUpdateSuccess">更新成功</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailfbaNo">FBA号/发票号</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailconsigneeAddress">收件地址</sys:String>
+    <sys:String x:Key="WinTxtPodPodtaillatestEventTypeStr">操作状态</sys:String>
+
+    <sys:String x:Key="WinTxtPodPodtailcontainerNo">柜号</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailremarks2">海外仓要求</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailwmsPkgsNum">订单件数</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailwmsGrossWeight">订单毛重</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailwmsVolume">订单体积</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailexpectPalletNums">预计打托数</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailactualPalletNums">实际打托数</sys:String>
+    <sys:String x:Key="WinTxtPodPodtaileta">ETA时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailata">ATA时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailpickupConActualDate">提柜时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailtailPickupScheduleDate">预约提货时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailtailInboundScheduleDate">预计到仓时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailtailInboundActualDate">实际到仓时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtaildispatchDate">交派时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailpodDate">POD时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailcreateTime">创建时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailcreateUserName">创建人</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailupdateTime">编辑时间</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailconsigneeWarehouseCode">收件人仓库代码</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailconsigneeProvince">收件人省</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailconsigneeCity">收件人城市</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailconsigneeTel">收件人电话</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailconsigneePostcode">收件人邮编</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailupdateUserName">编辑人</sys:String>
+
+
+    <sys:String x:Key="WinTxtPodPodtailExportCompleted">导出完成</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailNoItemSelected">请选择需要预约的条目</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailNoappropriateOrder">没有需符合要求的订单数据</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailSelectOrg">请选择机构</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailUnloadingStatus">非装载中状态</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailPleaseInputDate">请输入查询日期</sys:String>
+    <sys:String x:Key="WinTxtPodPodtailMoreTransportOrder">请选择同一尾程代理的订单</sys:String>
+
+    <sys:String x:Key="AddAdjustTaskSuccess">添加调账工作号成功</sys:String>
+    <sys:String x:Key="FailedAddAdjustTask">添加调账工作号失败</sys:String>
+
+    <sys:String x:Key="WinTxtPodDelieveryorderNo">订单号</sys:String>
+    <sys:String x:Key="WinTxtPodDelieverytailDeliveryModeName">尾程代理</sys:String>
+    <sys:String x:Key="WinTxtPodDelieveryconsigneeName">收件人</sys:String>
+    <sys:String x:Key="WinTxtPodDelieverywmsVolume">订单体积</sys:String>
+    <sys:String x:Key="WinTxtPodDelieveryexpectPalletNums">预计打托数</sys:String>
+
+    <sys:String x:Key="WinTxtImportUSTariffDownloadFormat">下载模板</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffReadFile">读取文件</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffImport">导入</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffReadStatus">读取状态</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffFailReason">失败原因</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffShowToastParsingFailed">模板解析失败</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffShowToastVerifyData">请校验数据</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffShowToastVerifyDataImport">请校验数据并重新导入</sys:String>
+    <sys:String x:Key="WinTxtImportUSTariffShowToastImportSuccess">导入成功</sys:String>
+
+    <sys:String x:Key="WinTxtImportPodStatusVesselName">船名</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusVoyageNum">航次</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusContainerNo">箱号</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusChangeDate">换柜时间</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusImportFinish">完成</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusImportSuccess">共上传成功：</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusImportFail">共上传失败：</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusImportCount">总上传：</sys:String>
+    <sys:String x:Key="WinTxtImportPodStatusExistFail">存在导入失败数据</sys:String>
+
+    <sys:String x:Key="WinTxtExpDeliveryRegisterTime">注册时间</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryOrderTime">下单时间</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryScanTime">提取时间</sys:String>
+    <sys:String x:Key="WinTxtExpDeliverySignTime">签收时间</sys:String>
+    <sys:String x:Key="WinTxtExpDeliverySync">手工同步</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryImportEvent">事件导入</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryTrackingNo">转单号</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryTrackingStatus">转单状态</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryAbnormalStatus">异常状态</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryRemark">备注</sys:String>
+    <sys:String x:Key="WinTxtExpDeliveryNotSelected">没有选中快递</sys:String>
+
+    <sys:String x:Key="WinTxtStockBoxDetailboxIndex">序号</sys:String>
+    <sys:String x:Key="WinTxtStockBoxDetailboxNo">箱号</sys:String>
+    <sys:String x:Key="WinTxtStockBoxDetailwmsLengthCm">入库长</sys:String>
+    <sys:String x:Key="WinTxtStockBoxDetailwmsWidthCm">入库宽</sys:String>
+    <sys:String x:Key="WinTxtStockBoxDetailwmsHeightCm">入库高</sys:String>
+    <sys:String x:Key="WinTxtStockBoxDetailwmsVolume">入库体积</sys:String>
+    <sys:String x:Key="WinTxtStockBoxDetailwmsGrossWeight">入库毛重</sys:String>
+
+    <!--新系统-->
+    
+    <!--精确查询-->
+    <!--查询类型定义-->
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_CONTAINER_NO">集装箱号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_HBL_NO">提单号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_ORDER_NO">订单号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_BOX_NO">BOX号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_EXPRESS_NO">快递号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_CONTAINER_BATCH_NO">箱批次</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_QUERY_TYPE_FBA_NO">FBA号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_Title">精确查询</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_queryKey">查询唯一号</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_queryType">查询类型</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_btnReset">重置</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_ucOrder">详情</sys:String>
+    <sys:String x:Key="PreciseQueryBasePage_ucTime">时间轴</sys:String>
+
+
+    <!--共通一览-托盘-->
+    <sys:String x:Key="BindPalletGridPage_palletNo">托盘编号</sys:String>
+    <sys:String x:Key="BindPalletGridPage_count">件/箱</sys:String>
+
+
+    <!--共通详情-柜子-->
+    <sys:String x:Key="ContainerDetailGridPage_shipGroup">船公司</sys:String>
+    <sys:String x:Key="ContainerDetailGridPage_containerGroup">整柜</sys:String>
+    <sys:String x:Key="ContainerDetailGridPage_deliveryGroup">派送方式</sys:String>
+    <sys:String x:Key="ContainerDetailGridPage_shipCompany">船公司</sys:String>
+    <sys:String x:Key="ContainerDetailGridPage_freightNo">航次</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_line">航线</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_polName">始发港</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_destName">目的港</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_voyage">航程</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_containerBatchNo">箱批次号</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_sealNo">铅封号</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_hblNo">提单号</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_containerType">箱型</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_totalPiece">总票数</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_totalCount">总件数</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_totalWeight">总毛重</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_polWarehouse">装柜地</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_ups">海派-UPS</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_trunk">海卡</sys:String>
+	<sys:String x:Key="ContainerDetailGridPage_selfPickUp">留仓自提</sys:String>
+
+
+    <!--共通详情-订单-->
+    <sys:String x:Key="OrderDetailGridPage_startGroup">始发站</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_destGroup">收货人</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_cargoGroup">货物信息</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_startAttn">联系人</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_startTel">联系电话</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_startEmail">邮箱</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_startCity">城市</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_endAttn">联系人</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_endTel">联系电话</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_endEmail">邮箱</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_endZip">邮编</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_endState">州</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_endAddress">收货地址</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_goodName">品名</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_count">件数</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_feeWeight">计费重</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_vol">体积</sys:String>
+	<sys:String x:Key="OrderDetailGridPage_custRefNo">客户参考号</sys:String>
+
+
+    <!--共通一览-箱规-->
+    <sys:String x:Key="ContainerRuleGridPage_SysBoxNo">箱号</sys:String>
+    <sys:String x:Key="ContainerRuleGridPage_WmsLengthCm">长</sys:String>
+    <sys:String x:Key="ContainerRuleGridPage_WmsWidthCm">宽</sys:String>
+    <sys:String x:Key="ContainerRuleGridPage_WmsHeightCm">高</sys:String>
+    <sys:String x:Key="ContainerRuleGridPage_WmsGrossWeight">毛重</sys:String>
+    <sys:String x:Key="ContainerRuleGridPage_overWeight">超重</sys:String>
+    <sys:String x:Key="ContainerRuleGridPage_overLength">超长</sys:String>
+
+
+    <!--共通tab-箱子-->
+    <sys:String x:Key="ContainerTabPage_tiTime">时间轴</sys:String>
+    <sys:String x:Key="ContainerTabPage_tiDetail">详情</sys:String>
+
+
+    <!--共通tab-订单-->
+    <sys:String x:Key="OrderTabPage_tiTime">时间轴</sys:String>
+    <sys:String x:Key="OrderTabPage_tiContainer">箱规</sys:String>
+	<sys:String x:Key="OrderTabPage_tiDetail">详情</sys:String>
+	<sys:String x:Key="OrderTabPage_tiPallet">目的站绑托</sys:String>
+
+
+    <!--精确查询tab-订单-->
+    <sys:String x:Key="PreciseQueryOrderTabPage_tiContainer">箱规</sys:String>
+	<sys:String x:Key="PreciseQueryOrderTabPage_tiPallet">目的站绑托</sys:String>
+
+
+    <!--共通一览-时间轴-->
+    <sys:String x:Key="TimeGridPage_CreateTime">创建时间</sys:String>
+    <sys:String x:Key="TimeGridPage_eventName">状态</sys:String>
+    <sys:String x:Key="TimeGridPage_location">位置</sys:String>
+
+
+    <!--调度-提柜-->
+    <sys:String x:Key="ContainerPickUpPage_Title">预约提柜</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_containerNo">集装箱号</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_masterBill">提单号</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_containerCode">箱型</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_mawbGrossWeight">箱重</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_transferMethod">直送</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_route">航线</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_destinationPort">码头</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_countDown">倒计时</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_customsAgentName">清关公司</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_flgSea">海放</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_flgPay">码头费</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_executorName">预约提柜公司</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_consigneeAddress">送仓详细地址</sys:String>
+    <sys:String x:Key="ContainerPickUpPage_btnException">异常</sys:String>
+	<sys:String x:Key="ContainerPickUpPage_btnOrder">预约</sys:String>
+	<sys:String x:Key="ContainerPickUpPage_btnReOrder">重新预约</sys:String>
+	<sys:String x:Key="ContainerPickUpPage_btnCancelOrder">取消</sys:String>
+	<sys:String x:Key="ContainerPickUpPage_btnDirect">直送</sys:String>
+
+
+	<!--目的站-菜单-->
+    <sys:String x:Key="DestinationStationBasePage_menuMain">目的站</sys:String>
+    <sys:String x:Key="DestinationStationBasePage_menuQuery">精确查询</sys:String>
+    <sys:String x:Key="DestinationStationBasePage_menuDispatch">调度</sys:String>
+    <sys:String x:Key="DestinationStationBasePage_menuOrderPickup">预约提柜</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuPlanDelivery">派送排线</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuExceptionIntercept">异常拦截</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuScan">扫描操作</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuSorting">进站分拣</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuBindPalletVerify">绑托校验</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuSplitReport">拆柜报告</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuAssociate">出站交接</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuAlert">预警</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuExpressPickup">快递提取</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuTruckSignIn">卡派签收</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuBill">应收账单</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuContainerFee">整柜</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuTruckFee">卡派</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuCheckFeeHistory">已核销</sys:String>
+	<sys:String x:Key="DestinationStationBasePage_menuPaid">支出</sys:String>
+
+
+	<!--调度-拦截-->
+    <sys:String x:Key="ExceptionInterceptPage_Title">异常拦截</sys:String>
+    <sys:String x:Key="ExceptionInterceptPage_SUM_group_wmsPkgsNum">总件数={0}</sys:String>
+    <sys:String x:Key="ExceptionInterceptPage_SUM_group_wmsGrossWeight">总计费重={0:0.000}</sys:String>
+    <sys:String x:Key="ExceptionInterceptPage_SUM_group_wmsVolume">总体积={0:0.000}</sys:String>
+    <sys:String x:Key="ExceptionInterceptPage_SUM_selCounts">已选择{0}票</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_SUM_sel_wmsPkgsNum">件数={0}</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_SUM_sel_wmsGrossWeight">计费重={0:0.000}</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_SUM_sel_wmsVolume">体积={0:0.000}</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_SUM_total_wmsPkgsNum">总件数={0}</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_SUM_total_wmsGrossWeight">总计费重={0:0.000}</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_SUM_total_wmsVolume">总体积={0:0.000}</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_orderNo">订单号</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_stayDays">留站天数</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_wmsPkgsNum">件数</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_wmsGrossWeight">毛重</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_wmsVolume">体积</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_consigneeWarehouseCode">收件人代码</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_consigneeProvince">州</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_consigneePostcode">邮编</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_consigneeAddress">详细地址</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_senderName">始发站联系人</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_senderPostcode">始发站联系邮箱</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_isDownLoadPrintLabel">标签</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_exceptionInterceptStatusName">目的站异常拦截</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_btnLock">锁定</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_btnUnlock">解锁</sys:String>
+	<sys:String x:Key="ExceptionInterceptPage_btnPrintLabel">打印标签</sys:String>
+
+
+    <!--调度-派送-->
+	<sys:String x:Key="PlanDeliveryPage_Title">派送排线</sys:String>
+    <sys:String x:Key="PlanDeliveryPage_SUM_group_wmsPkgsNum">总件数={0}</sys:String>
+    <sys:String x:Key="PlanDeliveryPage_SUM_group_wmsGrossWeight">总毛重={0:0.000}</sys:String>
+    <sys:String x:Key="PlanDeliveryPage_SUM_group_wmsVolume">总体积={0:0.000}</sys:String>
+    <sys:String x:Key="PlanDeliveryPage_SUM_selCounts">已选择{0}票</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_SUM_sel_wmsPkgsNum">件数={0}</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_SUM_sel_wmsGrossWeight">毛重={0:0.000}</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_SUM_sel_wmsVolume">体积={0:0.000}</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_SUM_total_wmsPkgsNum">总件数={0}</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_SUM_total_wmsGrossWeight">总毛重={0:0.000}</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_SUM_total_wmsVolume">总体积={0:0.000}</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_isOutOfGauge">超规</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_orderNo">订单号</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_shipperChannelName">产品品名</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_wmsPkgsNum">件数</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_wmsGrossWeight">毛重</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_wmsVolume">体积</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_bindPalletDate">绑托日期</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_consigneeProvince">州</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_consigneePostcode">邮编</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_consigneeAddress">地址</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_tailPickupScheduleDate">预约派送日期</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_tailDeliveryModeName">派送方式</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_consigneeWarehouseCode">收件人代码</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_btnDownLoad">下载BOL</sys:String>
+	<sys:String x:Key="PlanDeliveryPage_btnOrder">预约</sys:String>
+
+
+    <!--提柜直送-dialog-->
+    <sys:String x:Key="PickUpContainerDirectSendDlg_Title">直送</sys:String>
+    <sys:String x:Key="PickUpContainerDirectSendDlg_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_hblNo">提单号</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_shipCompany">船公司</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_boxType">箱型</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_directSendNm">直达</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_wharf">码头</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_consigneeCode">收货人代码</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_detailAddress">详细地址</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_arriveDate">送达时间</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_orderNo">预约号</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_btnConfirm">确定</sys:String>
+	<sys:String x:Key="PickUpContainerDirectSendDlg_btnCancel">取消</sys:String>
+
+
+    <!--提柜异常-dialog-->
+    <sys:String x:Key="PickUpContainerExceptionDlg_Title">异常</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_lbei90">缺DO</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_lbei91">缺AN</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_lbei92">码头未放约</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_lbei93">码头缺车架</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_lbei94">海关查验</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_lbei95">车辆问题</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_btnConfirm">确定</sys:String>
+	<sys:String x:Key="PickUpContainerExceptionDlg_btnCancel">取消</sys:String>
+
+
+    <!--提柜预约-dialog-->
+    <sys:String x:Key="PickUpContainerOrderDlg_Title">预约</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_Title2">取消预约</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_hblNo">提单号</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_shipCompany">船公司</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_boxType">箱型</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_directSendNm">直达</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_wharf">码头</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_warehouseCode">收货人代码</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_warehouseAddress">送仓地址</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_orderDate">预约时间</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_truckCompany">卡车公司</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_mailTo">邮箱To</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_mailCc">邮箱cc</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_specialInstructions">特别说明</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_btnConfirm">确定</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_btnCancel">取消</sys:String>
+	<sys:String x:Key="PickUpContainerOrderDlg_mailTo_nullText">多个收件人请用','逗号隔开</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_001">预约提柜</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_002">取消预约提柜</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_003">集装箱号</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_004">箱型</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_005">提单号</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_006">船公司</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_007">直送</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_008">码头</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_009">送仓地址</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_010">预约提柜时间</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_011">特别说明</sys:String>
+    <sys:String x:Key="PickUpContainerOrderDlg_mail_012">收到请回复，非常感谢！</sys:String>
+
+
+    <!--调度派送-预约-dialog-->
+    <sys:String x:Key="PlanDeliveryOrderDlg_Title">预约</sys:String>
+    <sys:String x:Key="PlanDeliveryOrderDlg_consigneeWarehouseCode">收货人代码</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_wmsVolume">体积</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_wmsPkgsNum">件数</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_wmsGrossWeight">毛重</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_consigneeAddress">详细地址</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_orderDate">预约派送</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_specialInstructions">特别说明</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_btnConfirm">确定</sys:String>
+	<sys:String x:Key="PlanDeliveryOrderDlg_btnCancel">取消</sys:String>
+
+
+    <!--整柜应收-->
+    <sys:String x:Key="ContainerFee2Page_Title">整柜应收</sys:String>
+    <sys:String x:Key="ContainerFee2Page_group_amount">总金额=${0:0.000}</sys:String>
+    <sys:String x:Key="ContainerFee2Page_feeName">中文类型</sys:String>
+    <sys:String x:Key="ContainerFee2Page_feeEN">英文类型</sys:String>
+    <sys:String x:Key="ContainerFee2Page_unitName">单位</sys:String>
+    <sys:String x:Key="ContainerFee2Page_unitPrice">单价</sys:String>
+    <sys:String x:Key="ContainerFee2Page_unitCount">数量</sys:String>
+    <sys:String x:Key="ContainerFee2Page_amount">金额</sys:String>
+    <sys:String x:Key="ContainerFee2Page_currency">币种</sys:String>
+    <sys:String x:Key="ContainerFee2Page_payerCode">付款人编号</sys:String>
+    <sys:String x:Key="ContainerFee2Page_remark">特殊说明</sys:String>
+    <sys:String x:Key="ContainerFee2Page_createTime">数据保存时间</sys:String>
+    <sys:String x:Key="ContainerFee2Page_masterBill">提单号</sys:String>
+    <sys:String x:Key="ContainerFee2Page_containerNo">集装箱号</sys:String>
+    <sys:String x:Key="ContainerFee2Page_nodeNameForm">科目</sys:String>
+    <sys:String x:Key="ContainerFee2Page_btnSaveFee">保存费用</sys:String>
+    <sys:String x:Key="ContainerFee2Page_btnDownload">下载</sys:String>
+    <sys:String x:Key="ContainerFee2Page_btnVerification">核销</sys:String>
+
+
+    <!--卡派应收-->
+    <sys:String x:Key="TruckFeePage_Title">卡派应收</sys:String>
+    <sys:String x:Key="TruckFeePage_group_amount">总金额=${0:0.000}</sys:String>
+    <sys:String x:Key="TruckFeePage_feeName">中文类型</sys:String>
+    <sys:String x:Key="TruckFeePage_feeEN">英文类型</sys:String>
+    <sys:String x:Key="TruckFeePage_unitName">单位</sys:String>
+    <sys:String x:Key="TruckFeePage_unitPrice">单价</sys:String>
+    <sys:String x:Key="TruckFeePage_unitCount">数量</sys:String>
+    <sys:String x:Key="TruckFeePage_amount">金额</sys:String>
+    <sys:String x:Key="TruckFeePage_currency">币种</sys:String>
+    <sys:String x:Key="TruckFeePage_remark">特殊说明</sys:String>
+    <sys:String x:Key="TruckFeePage_deliveryMode">派送方式</sys:String>
+    <sys:String x:Key="TruckFeePage_createTime">数据保存时间</sys:String>
+	<sys:String x:Key="TruckFeePage_payerCode">付款人编号</sys:String>
+    <sys:String x:Key="TruckFeePage_orderNo">订单号</sys:String>
+    <sys:String x:Key="TruckFeePage_btnSaveFee">保存费用</sys:String>
+    <sys:String x:Key="TruckFeePage_btnDownload">下载</sys:String>
+    <sys:String x:Key="TruckFeePage_btnVerification">核销</sys:String>
+
+
+    <!--历史账单-->
+    <sys:String x:Key="CheckFeeHistoryPage_Title">历史账单</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_tiCheckContainer">已核销整柜</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_group_containerNo">核销柜数={0}</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_c_masterBill">提单号</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_c_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_c_checkedAmount">核销金额</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_c_checkDate">核销日期</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_c_checkYearMonth">核销年月</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_tiCheckOrder">已核销订单</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_group_orderNo">核销订单数={0}</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_orderNo">订单号</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_deliveryMode">派送方式</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_checkedAmount">核销金额</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_checkDate">核销日期</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_checkYearMonth">核销年月</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_btnCancelCheck">取消核销</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_fee_title">费用一览</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_c_group_amount">总金额=${0:0.000}</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_c_feeName">中文类型</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_c_feeEN">英文类型</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_c_amount">金额</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_c_nodeNameForm">科目</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_o_group_amount">总金额=${0:0.000}</sys:String>
+    <sys:String x:Key="CheckFeeHistoryPage_o_feeName">中文类型</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_feeEN">英文类型</sys:String>
+	<sys:String x:Key="CheckFeeHistoryPage_o_amount">金额</sys:String>
+
+	
+	<!--箱费用编辑-dialog-->
+    <sys:String x:Key="EditContainerFeeDlg_Title">编辑费用</sys:String>
+    <sys:String x:Key="EditContainerFeeDlg_payerCode">付款人编号</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_containerNo">集装箱号</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_nodeNameForm">科目</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_feeName">中文类型</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_feeEN">英文类型</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_unitPrice">单价</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_unitCount">数量</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_amount">金额</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_remark">特殊说明</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_btnConfirm">保存</sys:String>
+	<sys:String x:Key="EditContainerFeeDlg_btnCancel">取消</sys:String>
+
+
+	<!--订单费用编辑-dialog-->
+    <sys:String x:Key="EditTruckFeeDlg_Title">编辑费用</sys:String>
+    <sys:String x:Key="EditTruckFeeDlg_payerCode">付款人编号</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_orderNo">订单号</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_feeName">中文类型</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_feeEN">英文类型</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_unitPrice">单价</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_unitCount">数量</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_amount">金额</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_remark">特殊说明</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_btnConfirm">保存</sys:String>
+	<sys:String x:Key="EditTruckFeeDlg_btnCancel">取消</sys:String>
+
+
+	<!--箱子核销-dialog-->
+    <sys:String x:Key="ContainerVerificationDlg_Title">核销</sys:String>
+	<sys:String x:Key="ContainerVerificationDlg_payerCode">付款人编号</sys:String>
+	<sys:String x:Key="ContainerVerificationDlg_totalAmount">金额</sys:String>
+	<sys:String x:Key="ContainerVerificationDlg_containerCount">集装箱数</sys:String>
+	<sys:String x:Key="ContainerVerificationDlg_verificationDate">核销时间</sys:String>
+	<sys:String x:Key="ContainerVerificationDlg_btnConfirm">确定</sys:String>
+	<sys:String x:Key="ContainerVerificationDlg_btnCancel">取消</sys:String>
+
+
+	<!--订单核销-dialog-->
+    <sys:String x:Key="TruckVerificationDlg_Title">核销</sys:String>
+	<sys:String x:Key="TruckVerificationDlg_payerCode">付款人</sys:String>
+	<sys:String x:Key="TruckVerificationDlg_totalAmount">总金额</sys:String>
+	<sys:String x:Key="TruckVerificationDlg_orderCount">订单数</sys:String>
+	<sys:String x:Key="TruckVerificationDlg_verificationDate">核销时间</sys:String>
+	<sys:String x:Key="TruckVerificationDlg_btnConfirm">确定</sys:String>
+	<sys:String x:Key="TruckVerificationDlg_btnCancel">取消</sys:String>
+
+
+	<!--登录-dialog-->
+    <sys:String x:Key="LoginWindow2_cbxAutologin">自动登录</sys:String>
+    <sys:String x:Key="LoginWindow2_cbxRememberPwd">记住密码</sys:String>
+    <sys:String x:Key="LoginWindow2_btnLoginNew">登录</sys:String>
+
+
+	<!--message-com-->
+    <sys:String x:Key="message_com_query_failed">查询失败</sys:String>
+	<sys:String x:Key="message_com_query_failed2">查询失败：</sys:String>
+    <sys:String x:Key="message_com_update_failed">更新失败</sys:String>
+	<sys:String x:Key="message_com_update_failed2">更新失败</sys:String>
+
+
+	<!--message-ContainerVerificationDlg-->
+	<sys:String x:Key="message_ContainerVerificationDlg_verificationDate">请输入核销日期</sys:String>
+
+
+	<!--message-PickUpContainerDirectSendDlg-->
+	<sys:String x:Key="message_PickUpContainerDirectSendDlg_consigneeCode">请输入收货人代码</sys:String>
+	<sys:String x:Key="message_PickUpContainerDirectSendDlg_detailAddress">请输入详细地址</sys:String>
+	<sys:String x:Key="message_PickUpContainerDirectSendDlg_arriveDate">请输入送达时间</sys:String>
+	<sys:String x:Key="message_PickUpContainerDirectSendDlg_orderNo">请输入预约号</sys:String>
+
+
+	<!--message-PickUpContainerOrderDlg-->
+	<sys:String x:Key="message_PickUpContainerOrderDlg_warehouseCode">请选择收件人代码</sys:String>
+	<sys:String x:Key="message_PickUpContainerOrderDlg_warehouseAddress">请输入送仓地址</sys:String>
+	<sys:String x:Key="message_PickUpContainerOrderDlg_orderDate">请输入预约时间</sys:String>
+	<sys:String x:Key="message_PickUpContainerOrderDlg_truckCompany">请输入卡车公司</sys:String>
+	<sys:String x:Key="message_PickUpContainerOrderDlg_mailTo">请输入邮箱To</sys:String>
+
+
+	<!--message-PlanDeliveryOrderDlg-->
+	<sys:String x:Key="message_PlanDeliveryOrderDlg_orderDate">请输入预约派送时间</sys:String>
+
+
+	<!--message-TruckVerificationDlg-->
+	<sys:String x:Key="message_TruckVerificationDlg_verificationDate">请输入核销日期</sys:String>
+
+
+	<!--message-TruckVerificationDlg-->
+	<sys:String x:Key="message_LoginWindow2_userName">请输入用户名和密码</sys:String>
+
+
+	<!--message-ContainerFee2Page-->
+	<sys:String x:Key="message_ContainerFee2Page_save">有费用没有保存，请先保存或者重新刷新费用！</sys:String>
+	<sys:String x:Key="message_ContainerFee2Page_download1">请选择提单下载！</sys:String>
+	<sys:String x:Key="message_ContainerFee2Page_download2">请选择一件提单下载！</sys:String>
+	<sys:String x:Key="message_ContainerFee2Page_download3">请选择提单核销费用！</sys:String>
+	<sys:String x:Key="message_ContainerFee2Page_no_fee">没有可以保存的费用!</sys:String>
+
+
+	<!--message-DestinationStationBasePage-->
+	<sys:String x:Key="message_DestinationStationBasePage_data_sync">基础数据未完成同步！</sys:String>
+
+
+	<!--message-PlanDeliveryPage-->
+	<sys:String x:Key="message_PlanDeliveryPage_select_one_row">请选中一行</sys:String>
+	<sys:String x:Key="message_PlanDeliveryPage_select_001">请选择同一个收货人</sys:String>
+	<sys:String x:Key="message_PlanDeliveryPage_temp_no_exists">模板文件不存在！</sys:String>
+	<sys:String x:Key="message_PlanDeliveryPage_download_ok">下载完成！</sys:String>
+
+
+	<!--message-PreciseQueryBasePage-->
+	<sys:String x:Key="message_PreciseQueryBasePage_no_data">没有数据！</sys:String>
+	<sys:String x:Key="message_PreciseQueryBasePage_unrecognizable_key">无法识别检索唯一号！</sys:String>
+
+
+	<!--message-TruckFeePage-->
+	<sys:String x:Key="message_TruckFeePage_save">有费用没有保存，请先保存或者重新刷新费用！</sys:String>
+	<sys:String x:Key="message_TruckFeePage_download1">请选择订单下载！</sys:String>
+	<sys:String x:Key="message_TruckFeePage_download2">请选择同一个付款人的订单！</sys:String>
+	<sys:String x:Key="message_TruckFeePage_download3">请选择订单核销费用！</sys:String>
+	<sys:String x:Key="message_TruckFeePage_download4">请选择同一个付款人的订单核销费用！</sys:String>
+	<sys:String x:Key="message_TruckFeePage_no_fee">没有可以保存的费用!</sys:String>
+
+	<!--message-CommonUtil2-->
+	<sys:String x:Key="message_CommonUtil2_select_one_row">请选一件操作！</sys:String>
+	<sys:String x:Key="message_CommonUtil2_select_one_row2">请保持当前行和选中行一致！</sys:String>
+
+</ResourceDictionary>
