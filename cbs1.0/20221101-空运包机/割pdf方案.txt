@@ -1,0 +1,28 @@
+            for (int i = 0; i < pdf.Pages.Count; i++)
+            {
+                //获取第一页
+                PdfPageBase page = pdf.Pages[i];
+
+                //创建一个新的PDF文档
+                PdfDocument newPdf = new PdfDocument();
+
+                //移除新建PDF文档的页边距
+                newPdf.PageSettings.Margins.All = 0;
+                //设置新建PDF文档的页面宽度等于原PDF文档第一页的页面宽度的一半，高度等于原PDF文档第一页的页面高度
+                newPdf.PageSettings.Width = page.Size.Width;
+                newPdf.PageSettings.Height = page.Size.Height;
+
+                //添加一个新页面到新建PDF文档
+                PdfPageBase newPage = newPdf.Pages.Add();
+
+                //页面内容写满之后自动分页
+                PdfTextLayout format = new PdfTextLayout();
+                format.Break = PdfLayoutBreakType.FitPage;
+                format.Layout = PdfLayoutType.Paginate;
+
+                //将原PDF文档第一页的内容画到新建PDF文档的页面上
+                page.CreateTemplate().Draw(newPage, new PointF(0, 0), format);
+
+                //保存文档
+                newPdf.SaveToFile($"VerticallySplit_{i}.pdf");
+            }
