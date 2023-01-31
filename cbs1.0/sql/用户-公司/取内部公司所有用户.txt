@@ -1,0 +1,4 @@
+select bui.org_id,bso.name, bui.* from prd_dl_base.base_user_info bui
+left join prd_dl_base.base_sys_org bso
+on bso.id = bui.org_id
+order by bui.org_id

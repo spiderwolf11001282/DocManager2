@@ -1,0 +1,5 @@
+--取内部公司的所有角色
+select bsr.org_code,bso.name, bsr.name from prd_dl_base.base_sys_role bsr
+inner join prd_dl_base.base_sys_org bso
+on bso.code=bsr.org_code
+where bsr.tenant_type='5' and bsr.status='1'

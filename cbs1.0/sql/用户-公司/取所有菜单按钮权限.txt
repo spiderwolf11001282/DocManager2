@@ -1,0 +1,9 @@
+select bm.parent_id,bm2.label as parent_menu,bar.menu_id,bm.label,bar.name,bar.permission,bar.type
+from prd_dl_base.base_auth_resource bar
+left join prd_dl_base.base_menu bm
+on bm.id=bar.menu_id
+left join prd_dl_base.base_menu bm2
+on bm2.id= bm.parent_id
+where bar.is_delete='0'
+and bm.sys_tenant_type='5'
+order by bm.parent_id,bm.label

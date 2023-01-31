@@ -1,0 +1,20 @@
+select bm.parent_id,bm2.label as parent_menu,bar.menu_id,bm.label,bar.name,bar.permission,bar.type
+from prd_dl_base.base_auth_resource bar
+left join prd_dl_base.base_menu bm
+on bm.id=bar.menu_id
+left join prd_dl_base.base_menu bm2
+on bm2.id= bm.parent_id
+where bar.is_delete='0'
+and bm.sys_tenant_type='5'
+and exists (
+    select bso.code,bso.name,bsr.* from prd_dl_base.base_sys_role bsr
+left join prd_dl_base.base_sys_org bso
+on bso.code = bsr.org_code
+inner join prd_dl_base.base_sys_role_res bsrr
+    on bsrr.role_id = bsr.id
+where bsr.name = '财务模块'
+  and bso.name ='上海道骊物流进口部'
+and bsr.tenant_type='5'
+and bsrr.res_id = bar.id
+    )
+order by bm.parent_id,bm.label

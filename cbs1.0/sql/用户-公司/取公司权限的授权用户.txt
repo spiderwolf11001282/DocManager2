@@ -1,0 +1,13 @@
+select  bui.*,  bso.code,bso.name,bsur.user_id,bui.name,  bsr.*
+from prd_dl_base.base_sys_role bsr
+left join prd_dl_base.base_sys_org bso
+on bso.code = bsr.org_code
+left join prd_dl_base.base_sys_user_role bsur
+on bsur.role_id=bsr.id
+left join prd_dl_base.base_user_info bui
+on bui.id=bsur.user_id
+where bsr.name = '财务模块'
+  and bso.name ='上海道骊物流进口部'
+and bsr.tenant_type='5'
+and bui.is_delete='0'
+and bui.org_id = bso.id
