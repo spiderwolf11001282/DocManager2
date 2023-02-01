@@ -1,0 +1,16 @@
+
+select bar.menu_id,bm.label,bar.permission,bsrr.role_id,bsr.name,bsr.org_code,bso.name,bsur.user_id,bui.name from prd_dl_base.base_auth_resource bar
+inner join prd_dl_base.base_sys_role_res bsrr
+on bsrr.res_id = bar.id
+inner join prd_dl_base.base_menu bm
+on bm.id=bar.menu_id
+inner join prd_dl_base.base_sys_role bsr
+on bsr.id=bsrr.role_id
+inner join prd_dl_base.base_sys_org bso
+on bso.code = bsr.org_code
+inner join prd_dl_base.base_sys_user_role bsur
+on bsur.role_id = bsr.id
+inner join prd_dl_base.base_user_info bui
+on bui.id=bsur.user_id
+where bar.permission = 'PositionListPage:view'
+order by bsr.org_code
