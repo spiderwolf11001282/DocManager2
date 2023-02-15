@@ -1,0 +1,5 @@
+select distinct  bso.name,bso.code,bso.city,bc.country_name_cn from prd_dl_base.base_user_info bui
+left join prd_dl_base.base_sys_org bso
+on bso.id = bui.org_id
+left join prd_dl_base.base_customer bc
+on bc.id = bso.id
