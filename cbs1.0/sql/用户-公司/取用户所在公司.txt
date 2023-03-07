@@ -1,6 +1,6 @@
-select bso.name,bso.code,bso.city,bc.country_name_cn,bui.* from prd_dl_base.base_user_info bui
+select bc.company_name_cn,bso.code,bso.city,bc.country_name_cn,bui.* from prd_dl_base.base_user_info bui
 left join prd_dl_base.base_sys_org bso
 on bso.id = bui.org_id
 left join prd_dl_base.base_customer bc
 on bc.id = bso.id
-where bui.name='shaohui'
+where bui.name='周贤'
