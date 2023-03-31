@@ -6,7 +6,7 @@ inner join prd_dl_base.base_menu bm
 on bm.id=bar.menu_id
 inner join prd_dl_base.base_sys_role bsr
 on bsr.id=bsrr.role_id
-inner join prd_dl_base.base_sys_org bso
+left join prd_dl_base.base_sys_org bso
 on bso.code = bsr.org_code
 inner join prd_dl_base.base_sys_user_role bsur
 on bsur.role_id = bsr.id
